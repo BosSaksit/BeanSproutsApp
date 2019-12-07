@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>return-product-add</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="ion-padding">
+        <ion-grid>
+        <ion-row >
+            <ion-col text-center>
+              <h1>เพิ่มลูกค้าที่ทำรายการคืนของ</h1>
+            </ion-col>
+          </ion-row>
+    
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="2" >
+          <ion-label>เลือกสาขา</ion-label>
+           <ion-select type="text" interface="popover" placeholder="เลือกสาขา" >
+              <ion-select-option value="u">อุดร1</ion-select-option>
+              <ion-select-option value="k">อุดร2</ion-select-option>
+              <ion-select-option value="k">อุดร3</ion-select-option>
+              <ion-select-option value="k">อุดร4</ion-select-option>
+     </ion-select>
+        </ion-col>
+        <ion-col size="2">
+            <ion-label>เลือกสาย</ion-label>
+            <ion-select type="text" interface="popover" placeholder="เลือกสาย" >
+               <ion-select-option value="u">อุดร1</ion-select-option>
+               <ion-select-option value="k">อุดร2</ion-select-option>
+               <ion-select-option value="k">อุดร3</ion-select-option>
+               <ion-select-option value="k">อุดร4</ion-select-option>
+      </ion-select>
+         </ion-col>
+         <ion-col size="2" >
+            <ion-label>เลือกลูกค้า</ion-label>
+            <ion-select type="text" interface="popover" placeholder="เลือกลูกค้า" >
+               <ion-select-option value="u">นาย พรชัย</ion-select-option>
+               <ion-select-option value="k">นาย ดำรง</ion-select-option>
+               <ion-select-option value="k">นาย ขาวดี</ion-select-option>
+               <ion-select-option value="k">นาย มีชัย</ion-select-option>
+      </ion-select>
+         </ion-col>
+      </ion-row>
+    </ion-grid>
+        </ion-card>
+    
+        <ion-card class="ion-padding">
+          <ion-grid>
+            <ion-row class="ion-justify-content-center">
+                <ion-col size="2">
+                    <ion-label>สินค้า</ion-label>
+                   <ion-select type="text" interface="popover" placeholder="สินค้า" >
+                      <ion-select-option value="u">ถั่วงอก</ion-select-option>
+                      <ion-select-option value="k">เส้นหมี่</ion-select-option>
+                      <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+                      <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+             </ion-select>
+                </ion-col>
+                <ion-col size="2">
+                    <ion-label>จำนวน :</ion-label>
+                   <ion-input></ion-input>
+                 </ion-col>
+                 <ion-col size="2">
+                    <ion-label>สถานะ</ion-label>
+                    <ion-select type="text" interface="popover" placeholder="สถานะ" >
+                       <ion-select-option value="u">ส่วนลด</ion-select-option>
+                       <ion-select-option value="k">ของเสีย</ion-select-option>
+                       <ion-select-option value="k">เปลี่ยนสินค้า</ion-select-option>
+               </ion-select>
+                 </ion-col>
+               </ion-row>
+    </ion-grid>
+    
+          </ion-card>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="1">
+            <ion-button  color="success" (click)="presentAlertConfirm()">บันทึก</ion-button>
+    </ion-col>
+     </ion-row>
+
+</ion-content>

@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>return-product-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-row>
+    <ion-col>
+       <ion-select type="text" interface="popover" placeholder="สาขา" >
+          <ion-select-option value="u">อุดร1</ion-select-option>
+          <ion-select-option value="k">อุดร2</ion-select-option>
+          <ion-select-option value="k">อุดร3</ion-select-option>
+          <ion-select-option value="k">อุดร4</ion-select-option>
+       </ion-select>
+    </ion-col>
+
+    <ion-col>
+        <ion-select type="text" interface="popover" placeholder="สาย" >
+           <ion-select-option value="u">อุดร1</ion-select-option>
+           <ion-select-option value="k">อุดร2</ion-select-option>
+           <ion-select-option value="k">อุดร3</ion-select-option>
+           <ion-select-option value="k">อุดร4</ion-select-option>
+        </ion-select>
+     </ion-col>
+     <ion-col>
+        <ion-button>
+            <ion-icon slot="icon-only" name="search"></ion-icon>
+            </ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-item lines="none" >
+            <ion-button  slot="end" size="default" (click)="gopageReturnProductAdd()">
+            เพิ่มการคืนของ
+            </ion-button>
+            </ion-item>
+   </ion-col>
+</ion-row>
+
+<ion-card class="ion-padding">
+    <ion-row>
+        <ion-col text-center>
+          <h1>รายการคืนของ</h1>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <table>
+          <tr>
+            <th>รหัสลูกค้า</th>
+            <th>ชื่อลูกค้า</th>
+            <th>สินค้า</th>
+            <th>สาขา</th>
+            <th>สาย</th>
+            <th>สถานะการคืนของ</th>
+            <th>จำนวน</th>
+            
+          </tr>
+  
+          <tr>
+            <td>Cs001</td>
+            <td>นาย พรชัย </td>
+            <td>ถั่วงอก</td>
+            <td>อุดร</td>
+            <td>อุดร1</td>
+            <td>ส่วนลด</td>
+            <td>10</td>
+           
+           </tr>
+
+           <tr>
+              <td>Cs002</td>
+              <td>นาย ดำรง</td>
+              <td>เส้นใหญ่</td>
+              <td>อุดร</td>
+              <td>อุดร2</td>
+              <td>ของเสีย</td>
+              <td>5</td>
+              
+             </tr>
+             <tr>
+                <td>Cs003</td>
+                <td>นาย ขาวดี</td>
+                <td>เส้นหมี่</td>
+                <td>อุดร</td>
+                <td>อุดร3</td>
+                <td>เปลี่ยนสินค้า</td>
+                <td>20</td>
+                
+               </tr>
+        </table>
+      </ion-row>
+</ion-card>
+</ion-content>
