@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>เก็บเงิน</ion-title>
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="ion-padding">
+        <ion-row>
+          <ion-col text-center>
+            <h1>รายการบิล</h1>
+          </ion-col>
+        </ion-row>
+    
+        <ion-grid >
+    
+          <ion-row>
+            <ion-segment scrollable>
+              <table class="fixed_header">
+                <thead>
+                  <tr>
+                    <th>รหัสบิล</th>
+                    <th>รอบบิล</th>
+                    <th>สาขา</th>
+                    <th>สาย</th>
+                    <th>สถานะการเก็บเงิน</th>
+                    <th>พนักงานเก็บเงิน</th>
+                    <th width="5%">ดูข้อมูล</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bl001</td>
+                    <td>5-10/มกราคม/2562</td>
+                    <td>อุดร</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>ดำเนินการเก็บเงิน</td>
+                    <td>Ca001</td>
+                    <td>
+                      <ion-button color="secondary" (click)="gopageGetMoneyAdd()">ดูข้อมูล</ion-button>
+                    </td>
+                   
+                  </tr>
+                  <tr>
+                    <td>Bl002</td>
+                    <td>10-15/มกราคม/2562</td>
+                    <td>อุดร</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>เก็บเงินแล้ว</td>
+                    <td>Ca002</td>
+                    <td>
+                      <ion-button color="secondary" (click)="gopageGetMoneyAdd()">ดูข้อมูล</ion-button>
+                    </td>
+                   
+                  </tr>
+                  <tr>
+                    <td>Bl003</td>
+                    <td>5-10/มกราคม/2562</td>
+                    <td>อุดร</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>ปิดบิล</td>
+                    <td>Ca003</td>
+                    <td>
+                      <ion-button color="secondary" (click)="gopageGetMoneyAdd()">ดูข้อมูล</ion-button>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </ion-segment>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    
+
+</ion-content>

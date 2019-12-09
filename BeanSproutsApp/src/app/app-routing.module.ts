@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'salenow-add',
     loadChildren: () => import('./salenow-add/salenow-add.module').then( m => m.SalenowAddPageModule)
   },
+  {
+    path: 'get-money-list',
+    loadChildren: () => import('./get-money-list/get-money-list.module').then( m => m.GetMoneyListPageModule)
+  },
+  {
+    path: 'get-money-add',
+    loadChildren: () => import('./get-money-add/get-money-add.module').then( m => m.GetMoneyAddPageModule)
+  },
 
 
 ];
