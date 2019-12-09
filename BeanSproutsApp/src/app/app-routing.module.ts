@@ -11,7 +11,15 @@ const routes: Routes = [
   {
     path: 'return-product-add',
     loadChildren: () => import('./return-product-add/return-product-add.module').then( m => m.ReturnProductAddPageModule)
+  },  {
+    path: 'salenow-list',
+    loadChildren: () => import('./salenow-list/salenow-list.module').then( m => m.SalenowListPageModule)
   },
+  {
+    path: 'salenow-add',
+    loadChildren: () => import('./salenow-add/salenow-add.module').then( m => m.SalenowAddPageModule)
+  },
+
 
 ];
 

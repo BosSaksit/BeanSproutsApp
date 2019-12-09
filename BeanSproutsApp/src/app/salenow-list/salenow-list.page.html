@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>รายการขายสด</ion-title>
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-row>
+    
+      <ion-col>
+          <ion-item lines="none" >
+              <ion-button  slot="end" size="default" (click)="gopageSaleNowAdd()">
+              เพิ่มการขายสด
+              </ion-button>
+              </ion-item>
+     </ion-col>
+  </ion-row>
+    <ion-card class="ion-padding">
+        <ion-row>
+            <ion-col text-center>
+              <h1>รายการขายสด</h1>
+            </ion-col>
+          </ion-row>
+      
+          <ion-row>
+            <table>
+              <tr>
+                <th>ชื่อลูกค้า</th>
+                <th>สินค้า</th>
+                <th>จำนวน</th>
+                <th>ราคา</th>
+                
+              </tr>
+      
+              <tr>
+                <td>นาย พรชัย </td>
+                <td>ถั่วงอก</td>
+                <td>100</td>
+                <td>200</td>
+               
+               </tr>
+    
+               <tr>
+                  
+                  <td>นาย ดำรง</td>
+                  <td>เส้นใหญ่</td>
+                  <td>20</td>
+                  <td>50</td>
+                  
+                 </tr>
+                 <tr>
+                    <td>นาย ขาวดี</td>
+                    <td>เส้นหมี่</td>
+                    <td>5</td>
+                    <td>50</td>
+                    </tr>
+            </table>
+          </ion-row>
+    </ion-card>
+
+</ion-content>
