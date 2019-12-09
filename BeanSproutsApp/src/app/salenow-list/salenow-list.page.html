@@ -20,14 +20,17 @@
      </ion-col>
   </ion-row>
     <ion-card class="ion-padding">
-        <ion-row>
+
+        <ion-row >
             <ion-col text-center>
               <h1>รายการขายสด</h1>
             </ion-col>
           </ion-row>
-      
+      <ion-grid>
           <ion-row>
-            <table>
+              <ion-segment scrollable>
+            <table  class="fixed_header">
+                <thead>
               <tr>
                 <th>ชื่อลูกค้า</th>
                 <th>สินค้า</th>
@@ -35,7 +38,8 @@
                 <th>ราคา</th>
                 
               </tr>
-      
+                </thead>
+                <tbody>
               <tr>
                 <td>นาย พรชัย </td>
                 <td>ถั่วงอก</td>
@@ -58,8 +62,11 @@
                     <td>5</td>
                     <td>50</td>
                     </tr>
+                  </tbody>
             </table>
+          </ion-segment>
           </ion-row>
+      </ion-grid>
     </ion-card>
 
 </ion-content>

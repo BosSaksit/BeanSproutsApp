@@ -33,7 +33,7 @@ export class AppComponent {
     [
       {
         title : "เก็บเงิน",
-        url   : "/home",
+        url   : "/get-money-list",
         icon  : "wallet"
       },
       {
