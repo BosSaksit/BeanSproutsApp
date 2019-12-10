@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'get-money-add',
     loadChildren: () => import('./get-money-add/get-money-add.module').then( m => m.GetMoneyAddPageModule)
   },
+  {
+    path: 'login-page',
+    loadChildren: () => import('./login-page/login-page.module').then( m => m.LoginPagePageModule)
+  },
 
 
 ];

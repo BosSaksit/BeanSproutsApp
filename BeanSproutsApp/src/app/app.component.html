@@ -11,10 +11,19 @@
           <ion-item [routerLink]="pages.url" routerDirection="forward">
               <ion-icon [name]="pages.icon" slot="start"></ion-icon>
                  {{pages.title}} 
+                
           </ion-item>
+          
         </ion-menu-toggle>
         </ion-list>
+       
       </ion-content>
+
+      <ion-footer>
+        <ion-item color="danger" (click)="logoutClicked()" >
+         <ion-icon name="log-out"  slot="start"></ion-icon> Logout
+        </ion-item>
+       </ion-footer>
     </ion-menu>
 <ion-router-outlet id="content1"></ion-router-outlet>
 </ion-app>
